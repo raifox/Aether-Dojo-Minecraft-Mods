@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список Модів Minecraft</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --card-bg: #1e1e1e;
+            --accent-color: #4ade80;
+            --border-color: #333333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #f8f9fa;
+        }
+        .search-container {
+            margin-bottom: 30px;
+        }
+        #searchInput {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            border: 2px solid var(--border-color);
+            border-radius: 8px;
+            box-sizing: border-box;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        #searchInput::placeholder {
+            color: #888;
+        }
+        #searchInput:focus {
+            border-color: var(--accent-color);
+        }
+        .mod-list {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+        .mod-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .mod-name {
+            margin: 0 0 10px 0;
+            font-size: 1.2em;
+            color: #60a5fa;
+        }
+        .mod-link-container {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .mod-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .mod-link:hover {
+            text-decoration: underline;
+        }
+        .private-mod {
+            color: #d8b4e2;
+            font-weight: bold;
+            background: #3b1f47;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+        .mod-desc {
+            margin: 0;
+            line-height: 1.5;
+            color: #cccccc;
+        }
+        .unknown-desc {
+            color: #ff7675;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Список Модів Minecraft</h1>
+    
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Пошук за назвою або ключовим словом (наприклад, 'dungeon' або 'броня')...">
+    </div>
+
+    <ul class="mod-list" id="modList">
+        <li class="mod-item">
+            <h3 class="mod-name">Abridged</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/abridged" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає мости, що генеруються природним чином над річками. Вони можуть перетинати будь-що: від невеликих струмків до величезних каньйонів. Існує 11 їхніх варіантів, і вам доведеться чимало подорожувати, щоб побачити всі. Частоту їхньої появи можна зменшити в конфігурації.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Alternative Auth</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/alternative-authentication" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Дозволяє використовувати альтернативні методи автентифікації на сервері.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Anvil Restoration</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/anvil-restoration" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Дозволяє лагодити зламані ковадла (зазвичай за допомогою залізних блоків).</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Brewery</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/brewery" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає просунуті механіки пивоваріння та створення різноманітних напоїв.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Climate Rivers</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/climate-rivers" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Попрощайтеся з потворними, недоречними річками! Мод замінює стандартний річковий біом на красиві, адаптовані до клімату річки. Досліджуйте три нові типи (теплі, помірні та холодні), кожен з яких ідеально вписується в навколишній ландшафт.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Crops Love Rain</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/crops-love-rain" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Змушує фермерські культури рости значно швидше під час дощу.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Dungeons and Taverns (та всі оновлення структур)</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/dungeons-and-taverns" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Глобально переробляє та покращує існуючі ванільні структури, а також додає нові підземелля й таверни.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">EDF Remastered</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/edf-remastered" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Переробка бою з Ендер Драконом, яка ускладнює фінального боса, зберігаючи ванільний стиль. Дракон отримує багато нових руйнівних атак, другу фазу на половині здоров'я та 500 одиниць здоров'я (замість 200). Також додає епічну музику.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Farmer's Delight</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/farmers-delight" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Велике розширення для фермерства та кулінарії, що додає нові інструменти, культури та страви.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Female Gender Mod</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/female-gender" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає можливість налаштувати жіночу модель персонажа (з унікальними анімаціями та пропорціями).</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Geophilic</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/geophilic" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Атмосферне покращення генерації ванільних біомів без додавання нових блоків.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Geyser</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/geyser" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Міст, що дозволяє гравцям з Minecraft Bedrock Edition заходити на Java-сервери.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Universal Graves</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/universal-graves" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Після смерті гравця створюється могила, яка надійно зберігає всі його речі.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Improved Village Placement</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/improved-village-placement" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Робить генерацію сіл більш логічною та естетичною відповідно до ландшафту.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Infinity Cave</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/datapack/infinity-cave" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Змінює мінімальну висоту світу до -128 і додає новий тип генерації: абсурдно гігантську, пов'язану систему печер (5 нових біомів). Звичайні моби тут не спавняться — натомість працює власна, значно складніша система спавну. Мод має roguelike-механіки та розрахований на пізні етапи гри.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Invisible Frames</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/invisible-frames-mod" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Дозволяє робити рамки для предметів невидимими, залишаючи видимим лише сам предмет.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Just Enough Items (JEI)</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/jei" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Зручний інтерфейс для перегляду всіх предметів у грі та рецептів їхнього крафту.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Jukebox Looping</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/jukebox_looping" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Музичні платівки в програвачі тепер зациклюються і грають безперервно.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Key</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/key" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Дозволяє замикати контейнери та двері для захисту від гравців і кріперів. Просто натисніть Shift + ПКМ по блоку, щоб замкнути або відімкнути його.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Master Cutter</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/datapack/mastercutter" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає понад 500 нових корисних рецептів для каменеріза. Дозволяє перемикатися між варіантами одного блоку (наприклад, полірованим і звичайним), різати глибинний сланець та камінь на кругляк тощо.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Minecart Upgrade</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/minecart-upgrade" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Робить ванільні вагонетки швидшими та кориснішими. Підвищує ліміт швидкості та додає розумніше керування вагонетками для комфортних високошвидкісних поїздок.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Структури Moog's (End, Mineshafts, Villages, Nether, Paths, Voyager)</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/mes-moogs-end-structures" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Глобальний набір модів, що додає безліч нових тематичних структур у різних вимірах та покращує генерацію світу.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">More Professions</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/datapack/more-professions" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає нові унікальні професії для сільських жителів.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">More Mobs</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/more-mobs" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Розширює фауну гри, додаючи нових різноманітних мобів.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Naturally Trimmed</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/naturally-trimmed" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Дозволяє ворожим мобам з'являтися у броні, яка має оздоблення (trims).</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">No Chat Reports</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/no-chat-reports" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Вимикає систему скарг на повідомлення в чаті та телеметрію від Microsoft.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Not Enough Trials</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/datapack/not-enough-trials" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Повністю переробляє Кімнати Випробувань (Trial Chambers). Мета — додати більше контенту, механік та різноманітності, водночас збалансувавши складність і нагороди.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Ouch!</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/ouch" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Серверний мод, що відображає числа або текст шкоди, коли сутність отримує урон, лікується або гине. Налаштовується залежно від типу шкоди, жертви чи атакуючого.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Perfect Accuracy</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/perfect-accuracy" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Прибирає випадковий розкид у снарядів (стріл, тризубців тощо), роблячи стрільбу 100% точною.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Players Drop Heads</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/datapack/players-drop-heads" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Після смерті з гравців випадає їхня голова як трофей.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Potion Stacking</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/potion-stacking" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Дозволяє складати пляшечки із зіллями в стаки, економлячи місце в інвентарі.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Quick Sort</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/quicksort" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає функцію швидкого та зручного сортування предметів в інвентарі та скринях.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Raifox l and g chat</h3>
+            <div class="mod-link-container">🔒 <span class="private-mod">Приватний мод</span></div>
+            <p class="mod-desc">Додає локальний та глобальний чати. Щоб написати в глобальний чат, достатньо поставити "!" перед повідомленням.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Raifox No Hit Delay</h3>
+            <div class="mod-link-container">🔒 <span class="private-mod">Приватний мод</span></div>
+            <p class="mod-desc">Прибирає затримку отримання шкоди у мобів. Тепер кілька ударів або випущених стріл одночасно завдають повну шкоду, а не ігноруються системою.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Raifox factions</h3>
+            <div class="mod-link-container">🔒 <span class="private-mod">Приватний мод</span></div>
+            <p class="mod-desc">Додає 2 фракції при вході в гру. Воїни (PvP) — мають збільшену шкоду (+2) та 5 додаткових сердець, можуть битися з іншими, але не можуть шкодити мирним. Мирні (PvE) — не можуть атакувати інших, але мають збільшену швидкість бігу.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Raifox enchants</h3>
+            <div class="mod-link-container">🔒 <span class="private-mod">Приватний мод</span></div>
+            <p class="mod-desc">Додає кастомні зачарування, які можна отримати в столі зачарувань, знайти у світі та не тільки.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Raifox betteranvil</h3>
+            <div class="mod-link-container">🔒 <span class="private-mod">Приватний мод</span></div>
+            <p class="mod-desc">Знімає обмеження в 40 рівнів для ковадла (прибирає напис "ЗАНАДТО ДОРОГО"). Також виправляє баг, через який некоректно об'єднувалися речі з різними рівнями чарів (наприклад, Гострота 7 + Гострота 5 тепер працюватиме коректно).</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Raifox random spawn</h3>
+            <div class="mod-link-container">🔒 <span class="private-mod">Приватний мод</span></div>
+            <p class="mod-desc">Всі гравці з'являються у випадкових координатах в радіусі 10 000 блоків.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Raifox simple warps</h3>
+            <div class="mod-link-container">🔒 <span class="private-mod">Приватний мод</span></div>
+            <p class="mod-desc">Звичайні варпи для гравців. Головний варп сервера — /warp tvrn, який телепортує гравця в таверну (місто Нульовка) на координати 0 0. Після використання телепорту починається кулдаун тривалістю 4 години.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Real Invisibility</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/plugin/realinvisibility" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Робить ефект невидимості повноцінним (приховує одягнену броню та предмети в руках).</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">RespectMyTrims</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/respect-my-trims" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Пігліни більше не будуть злитися на вас, якщо на вас броня із золотим оздобленням (trims). Вони сприйматимуть її як звичайну золоту броню. Також можна знайти "Snout Armor Trim" у руїнах бастіону, яке теж заспокоює піглінів.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Roguelike Dungeons</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/roguelikedungeons" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає у світ величезні, багаторівневі підземні комплекси з кімнатами, монстрами та цінним лутом.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Saplanting</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/saplanting" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Викинуті на землю саджанці дерев через певний час саджаються автоматично.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Sit!</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/sit" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Дозволяє гравцям сидіти на сходинках та напівблоках, як на справжніх стільцях.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Spiral Tower Village</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/spiral-tower-villages" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає височезні спіральні вежі, побудовані жителями села в давнину. На кожному поверсі є загадки, приховані механізми з червоного каменю, секретні кімнати з рідкісним лутом та забутими реліквіями.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Structory</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/structory" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає красиві атмосферні структури по всьому світу, які ідеально вписуються у ванільний стиль.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Target Dummy</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/target-dummy" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає тренувальний манекен, на якому можна тестувати зброю та бачити точну кількість нанесеної шкоди.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Through the Lilypads Gently</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/through-the-lily-pads-gently" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Змінює механіку зіткнень: тепер човни не ламають латаття, коли пропливають крізь них.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Universal Shops</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/universal-shops" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає блоки магазинів, що дозволяє гравцям зручно торгувати між собою на сервері.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Village Hero Plus</h3>
+            <div class="mod-link-container">🔗 <a href="https://www.google.com/search?q=https://modrinth.com/mod/village-hero-plus" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Розширює можливості та бонуси від ефекту "Герой села".</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Villager Names</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/villagernames" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Кожен сільський житель автоматично отримує унікальне ім'я.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">WITS (What Is That Structure)</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/wits" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Додає інформаційну підказку на екран, яка показує назву структури, в якій ти зараз знаходишся.</p>
+        </li>
+        <li class="mod-item">
+            <h3 class="mod-name">Моди YUNG's (Better End Island, Nether Fortresses, Strongholds, Bridges)</h3>
+            <div class="mod-link-container">🔗 <a href="https://modrinth.com/mod/yungs-better-end-island" class="mod-link" target="_blank">Modrinth</a></div>
+            <p class="mod-desc">Глобальне оновлення та розширення архітектури ключових ванільних структур (мости, фортеці Незеру, цитаделі та острови Енду).</p>
+        </li>
+    </ul>
+
+    <script>
+        document.getElementById('searchInput').addEventListener('keyup', function() {
+            let filter = this.value.toLowerCase();
+            let items = document.querySelectorAll('#modList .mod-item');
+            
+            items.forEach(function(item) {
+                let text = item.textContent.toLowerCase();
+                if (text.includes(filter)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
